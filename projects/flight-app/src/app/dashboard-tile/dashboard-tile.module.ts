@@ -22,11 +22,8 @@ import { DashboardTileComponent } from './dashboard-tile.component';
 export class DashboardTileModule { 
 
   constructor(private injector: Injector) {
-    
     const Elm = createCustomElement(DashboardTileComponent, {injector});
-
     customElements.define('dashboard-tile', Elm);
-
   }
 
 }

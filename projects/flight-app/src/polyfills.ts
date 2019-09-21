@@ -32,7 +32,7 @@
 // import 'core-js/es6/weak-map';
 // import 'core-js/es6/set';
 /** IE10 and IE11 requires the following for NgClass support on SVG elements */
-// import 'classlist.js';  // Run `npm install --save classlist.js`.
+import 'classlist.js';  // Run `npm install --save classlist.js`.
 /** Evergreen browsers require these. **/
 import 'core-js/es6/reflect';
 import 'core-js/es7/reflect';
@@ -40,7 +40,7 @@ import 'core-js/es7/reflect';
  * Required to support Web Animations `@angular/animation`.
  * Needed for: All but Chrome, Firefox and Opera. http://caniuse.com/#feat=web-animation
  **/
-// import 'web-animations-js';  // Run `npm install --save web-animations-js`.
+import 'web-animations-js';  // Run `npm install --save web-animations-js`.
 /***************************************************************************************************
  * Zone JS is required by Angular itself.
  */
@@ -62,9 +62,11 @@ import 'zone.js/dist/zone'; // Included with Angular CLI.
 // import 'intl/locale-data/jsonp/en';
 
 
-// This polyfill for web components has to be loaded 
-// after the other polyfills (esp. the core-js ones) 
-// using a script tag
-if (!window['customElements']) {
-    document.write('<script src="/assets/webcomponentsjs/webcomponents-loader.js"></script>');
-}
+
+// if (!window['customElements']) {
+//   const script = document.createElement('script');
+//   script.src = './assets/webcomponentsjs/bundles/webcomponents-sd-ce.js';
+//   script.defer = true;
+//   script.noModule = true;
+//   document.writeln(script.outerHTML);
+// }
