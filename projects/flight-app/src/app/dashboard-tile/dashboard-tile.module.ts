@@ -16,14 +16,13 @@ import { DashboardTileComponent } from './dashboard-tile.component';
     DashboardTileComponent
   ],
   entryComponents: [
-    DashboardTileComponent
+    // TODO: Add Entry Component
   ]
 })
 export class DashboardTileModule { 
 
   constructor(private injector: Injector) {
-    const Elm = createCustomElement(DashboardTileComponent, {injector});
-    customElements.define('dashboard-tile', Elm);
+    // TODO: Wrap Component and register it
   }
 
 }
