@@ -14,7 +14,7 @@
     "copy:modern": "cpr dist/external/main.modern.js projects/flight-app/src/assets/external-dashboard-tile.modern.bundle.js -o",
     "copy:legacy": "cpr dist/external/main.legacy.js projects/flight-app/src/assets/external-dashboard-tile.legacy.bundle.js -o",
     "copy:ce:modern": "npm run copy:modern && npm run copy:legacy",
-    "npx-build-plus:copy-assets": "node projects/flight-app/copy-wc-polyfill.js && node projects/flight-app//copy-wc-polyfill.js",
+    "npx-build-plus:copy-assets": "node projects/flight-app/copy-wc-polyfill.js && node projects/flight-app//copy-wc-polyfill.js && node projects/external/copy-bundles.js",
     "build:external:externals": "ng build --extra-webpack-config projects/external/webpack.externals.js --prod --project external --single-bundle --output-hashing none"
   },
   "private": true,

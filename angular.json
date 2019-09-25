@@ -301,7 +301,7 @@
       "schematics": {},
       "architect": {
         "build": {
-          "builder": "ngx-build-plus:build",
+          "builder": "ngx-build-plus:browser",
           "options": {
             "outputPath": "dist/external",
             "index": "projects/external/src/index.html",

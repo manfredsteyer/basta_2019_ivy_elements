@@ -32,6 +32,16 @@ export class DashboardPageComponent {
 		// HINT: use document.createElement, setAttribute, and content.appendChild
 		// HINT2: for the layout, assign the following classes: col-lg-4 col-md-3 col-sm-2
 
+		const tile = document.createElement(elementName);
+		tile['a'] = data[0];
+		tile['b'] = data[1];
+		tile['c'] = data[2];
+
+		tile.setAttribute('class', 'col-lg-4 col-md-3 col-sm-2');
+		// tile.addEventListener('click', () => alert(1));
+
+		content.appendChild(tile);
+
 	}
 
 	
